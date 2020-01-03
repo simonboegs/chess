@@ -80,18 +80,6 @@ public class Game {
 			botTurn(bot);
 		}
 	}
-	public static int[][] reqMoveGUI(String color)
-	{
-		text t = new text(color);
-		t.main();
-		while(!t.getBoolean())
-		{
-			System.out.println(t.getBoolean());
-		}
-		String[] s = t.getInputs();
-		int[][] inputs = {{Integer.parseInt(s[0]),Integer.parseInt(s[1])},{Integer.parseInt(s[2]),Integer.parseInt(s[3])}};
-		return inputs;
-	}
 	
 	public static int[][] reqMove(String color)
 	{
